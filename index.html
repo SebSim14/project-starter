@@ -1,14 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
 
-  <link rel="stylesheet" href="./css/main.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
+
 <body>
-  
+
+	<!--Header-->
+	<header class="header flex">
+		<h1 class="header_name">Poștașu'</h1>
+		<aside class="header_element flex">
+			<span class="header_element1">Poștașu' is a Romanian daily newspaper.</span>
+			<span class="header_element2">Poștașu' Media Group is a global news organisation that delivers fearless,
+				investigative journalism - giving a voice to the powerless and holding power to account. Our independent
+				ownership structure means we are entirely free from political and commercial influence. Only our values
+				determine the stories we choose to cover, relentlessly and courageously.</span>
+		</aside>
+	</header>
+
+	<!--Container-->
+	<div class="container">
+
+		<!--Navigation-->
+		<nav class="navigation_main flex">
+
+			<img class="navigation_logo" src="./assets/logo_200x200 (2).png" alt="logo_200x200">
+
+			<ul class="navigation_list flex spaced">
+				<li class="list_item active">
+					<a href="#">News</a>
+				</li>
+				<li class="list_item">
+					<a href="#">Opinion</a>
+				</li>
+				<li class="list_item">
+					<a href="#">Sport</a>
+				</li>
+				<li class="list_item">
+					<a href="#">Culture</a>
+				</li>
+				<li class="list_item">
+					<a href="#">Lifestyle</a>
+				</li>
+				<li class="list_item">
+					<a href="#">More</a>
+				</li>
+			</ul>
+
+			<form class="navigation_search">
+				<input class="search_item" type="search">
+				<button class="search_item pointer" type="submit">Search</button>
+			</form>
+
+			<select class="navigation_language">
+				<option class="navigation_language">EN</option>
+				<option class="navigation_language">RO</option>
+				<option class="navigation_language">DE</option>
+				<option class="navigation_language">FR</option>
+			</select>
+
+			<a href="#">Account</a>
+
+		</nav>
+
+
+		<!--Headlines-->
+		<div class="headlines_upper flex">
+			<h2 class="headlines_title">Headlines</h2>
+			<span class="line"></span>
+			<a class="view-all" href="#">View all</a>
+		</div>
+
+		<div class="headlines_articles flex">
+			<article class="headlines_article-1 flex">
+				<a href="#">Do your children have a passion for space? Discover the ESA Kids app</a>
+				<!-- <span class="date">05/03/2023</span> -->
+			</article>
+
+			<div class="headlines_articles-2-3-4">
+				<article class="headlines-article-individual">
+					<a href="#">13 Legitimately Awesome Environment Products to Buy Right Now</a>
+					<span class="date">05/03/2023</span>
+				</article>
+				<article class="headlines-article-individual">
+					<a href="#">The Most Entertaining Nature Influencers You Need to Follow</a>
+					<span class="date">05/03/2023</span>
+				</article>
+				<article class="headlines-article-individual">
+					<a href="#">What the Future of Oceans Work Looks Like After Coronavirus</a>
+					<span class="date">05/03/2023</span>
+				</article>
+			</div>
+		</div>
+
+
+		<!--Opinion-->
+		<main class="opinion_upper flex">
+			<h2 class="headlines_title">Opinion</h2>
+			<span class="line"></span>
+			<a class="view-all" href="#">View all</a>
+		</main>
+
+		<main class="opinion flex">
+			<article class="opinion_article" >
+				<img class="picture" src="./assets/elephants-640.jpg" alt="elephants">
+				<h2 class="opinion_article-author">Keanu Craig</h2>
+				<a class="opinion_article-link" href="#">"The Most Powerful People in the World of Elephants All Have Traits in Common"</a>
+				<span class="date">05/03/2023</span>
+			</article>
+			<article class="opinion_article-2">
+				<img class="picture" src="./assets/sea-640.jpg" alt="sea">
+				<h2 class="opinion_article-author">Gloria Douglas</h2>
+				<a class="opinion_article-link" href="#">"What the Government Doesn't Want You to Know About Beach"</a>
+				<span class="date">05/03/2023</span>
+			</article>
+			<article class="opinion_article">
+				<img class="picture" src="./assets/cattle-640.jpg" alt="cattle">
+				<h2 class="opinion_article-author">Tomas Connor</h2>
+				<a class="opinion_article-link" href="#">"We Underestimate Global Trends That Will Affect Highland Cows in 2023"</a>
+				<span class="date">05/03/2023</span>
+			</article>
+		</main>
+
+
+
+		<!--Culture-->
+		<main class="opinion_upper flex">
+			<h2 class="headlines_title">Culture</h2>
+			<span class="line"></span>
+			<a class="view-all" href="#">View all</a>
+		</main>
+
+		<div class="headlines_articles flex">
+			<article class="culture_article-1">
+				<img src="./assets/forest-640.jpg" alt="forest">
+				<a class="culture_forest-link" href="#">10 Incredible Hiking Products You’ll Wish You Discovered Sooner</a>
+				<span class="date">05/03/2023</span>
+			</article>
+			<div class="culture_articles-2-3 flex">
+				<article>
+					<img src="./assets/iceland-640.jpg" alt="iceland">
+					<a class="culture_forest-link" href="#">Few people know just how beautiful Iceland really is</a>
+					<span class="date">05/03/2023</span>
+				</article>
+				<article>
+					<img src="./assets/water-640.jpg" alt="water">
+					<a class="culture_forest-link" href="#">Where did the word "water" originate from?</a>
+					<span class="date">05/03/2023</span>
+				</article>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<br><br><br><br><br><br>
+	</div>
 </body>
+
 </html>

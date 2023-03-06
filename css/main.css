@@ -1,1 +1,300 @@
 /* This is your custom CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+/* * {border: 1px solid red;} */
+
+:root {
+	--primary-color: #026357;
+	--secondary-color: #00CC76;
+}
+
+/*General styling*/
+
+body {
+	background: url(../assets/mountains-3620_1920.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-attachment: fixed;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+
+/*Utility*/
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.spaced {
+	gap: 2rem;
+}
+
+/*Header*/
+
+.header {
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	min-height: 100vh;
+}
+
+.header_name {
+	font-size: 10rem;
+	font-family: 'Chonburi', cursive;
+}
+
+.header_element {
+	flex-direction: column;
+	width: 16rem;
+	gap: 2rem;
+}
+
+.header_element1 {
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+	border: 2px solid #fff;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.header_element2 {
+	font-size: 15px;
+	font-style: oblique;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	text-align: end;
+	background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+	border: 1px solid #fff;
+	border-radius: 1rem;
+	padding: 1rem;
+
+}
+
+/*Container*/
+
+.container {
+	background-color: #fff;
+	color: var(--primary-color);
+	margin: auto;
+	width: 65vw;
+	border-radius: 1rem;
+	padding: 1rem 10rem;
+}
+
+/*Header*/
+
+.navigation_main {
+	justify-content: space-between;
+	align-items: center;
+	height: 8rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.navigation_logo {
+	height: 100%;
+	aspect-ratio: 1;
+	margin: 0;
+	/* border: 1px solid var(--primary-color); */
+	border-radius: 1rem;
+}
+
+.navigation_list {
+	list-style: none;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0 1rem 0 1rem;
+}
+
+.list_item {}
+
+.navigation_search {
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.search_item {
+	max-width: 8rem;
+	margin: -3px;
+	border: 1px solid #bababa;
+	/* padding: 0; */
+	/* gap: 0; */
+	color: var(--primary-color);
+	border-radius: 5px;
+	background-color: #fff;
+	caret-color: var(--primary-color);
+
+}
+
+.pointer:hover {
+	color: var(--secondary-color);
+	cursor: pointer;
+}
+
+.navigation_language {
+	border: 0;
+	color: var(--primary-color);
+}
+
+
+/*Headlines*/
+
+.headlines_upper {
+	margin-top: 2rem;
+}
+
+.headlines_title {
+	font-size: 1.5rem;
+	font-family:'Times New Roman', Times, serif;
+	font-weight: 600;
+	/* padding: 0; */
+}
+
+.line {
+  flex: auto;
+	height: 1px;
+	transform: translate(0, 6px);
+  border-bottom: 1px solid #d8d8d8;
+	margin: 0 2rem 0 2rem;
+}
+
+a.view-all {
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+
+.headlines_articles {
+	/* margin-bottom: 1rem; */
+}
+
+.headlines_article-1 {
+	background-image: url(../assets/loveourplanet-640.jpg);
+	background-repeat: no-repeat;
+	background-size: 95% 100%;
+	width: 90%;
+	height: 350px;
+	justify-content: center;
+	align-items: end;
+	padding: 2rem 3rem 2rem 2rem;
+	color: #fff;
+	font-size: 1.25rem;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+	border-right: 1px solid #d8d8d8;
+}
+
+.headlines_articles-2-3-4 {
+	flex-direction: column;
+	font-size: 1.1rem;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+	/* border-left: 1px solid #d8d8d8;
+	margin-left: 2rem; */
+}
+
+.headlines-article-individual {
+	padding: 1rem 2rem;
+}
+
+.date {
+	display: block;
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #aaa;
+}
+
+/* .headlines_article-1::before {
+	content: "05/03/2023";
+	position: relative;
+	left: 65px;
+	bottom: -30px;
+	font-size: 12px;
+	color: #d8d8d8;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+} */
+
+
+/*Opinion*/
+
+.opinion_upper {
+	margin-top: 4rem;
+}
+
+.opinion {
+	gap: 1.5rem;
+}
+
+.opinion_article {
+
+}
+
+.picture {
+	width: 100%;
+	height: 100%;
+}
+
+.opinion_article-2 {
+	border-left: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+	padding: 0 1.5rem 0 1.5rem;
+}
+
+.opinion_article-author {
+	font-size: 1.25rem;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+
+.opinion_article-link {
+	font-size: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+
+/*Culture*/
+/* .culture_article-1 {
+	background-image: url(../assets/forest-640.jpg);
+	background-repeat: no-repeat;
+	background-size: 95% 100%;
+	width: 60%;
+	height: 350px;
+	justify-content: center;
+	align-items: end;
+	padding: 2rem 3rem 2rem 2rem;
+	color: #fff;
+	font-size: 1.25rem;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+	border-right: 1px solid #d8d8d8;
+} */
+
+.culture_forest-link {
+	display: block;
+	margin-top: 1rem;
+	font-size: 1.25rem;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 600;
+}
+
+.culture_articles-2-3 {
+	flex-direction: column;
+}
